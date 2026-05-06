@@ -21,3 +21,5 @@ parser = StrOutputParser()
 chain = RunnableSequence(prompt, model, parser, prompt2 , model, parser)
 
 print(chain.invoke({"topic": "chickens"}))
+
+# but we get only explaination for joke+explaination use runnable passthrough 
